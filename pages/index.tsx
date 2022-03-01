@@ -125,19 +125,27 @@ const Home: NextPage = () => {
         >
           <div
             css={css`
-              width: 6.9rem;
-              height: 6.9rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
             `}
           >
-            <Image
+            <div
               css={css`
-                border-radius: 1rem;
+                width: 6.9rem;
+                height: 6.9rem;
               `}
-              width={384}
-              height={384}
-              src="https://mjewell.github.io/static/media/mjewell.9d802493.jpg"
-              alt="Photo of Michael Jewell"
-            />
+            >
+              <Image
+                css={css`
+                  border-radius: 1rem;
+                `}
+                width={384}
+                height={384}
+                src="https://mjewell.github.io/static/media/mjewell.9d802493.jpg"
+                alt="Photo of Michael Jewell"
+              />
+            </div>
           </div>
           <div
             css={css`
@@ -158,7 +166,7 @@ const Home: NextPage = () => {
             </p>
             <p
               css={css`
-                margin: 0;
+                margin: 0.5rem 0 0 0;
                 font-size: 1.2rem;
                 color: #696969;
               `}
@@ -234,7 +242,7 @@ const Home: NextPage = () => {
                 >
                   <p
                     css={css`
-                      color: #696969;
+                      color: #494949;
                       margin: 0;
                     `}
                   >
@@ -244,7 +252,7 @@ const Home: NextPage = () => {
                   </p>
                   <p
                     css={css`
-                      color: #696969;
+                      color: #494949;
                       margin: 0;
                     `}
                   >
